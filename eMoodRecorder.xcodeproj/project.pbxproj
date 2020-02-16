@@ -18,10 +18,6 @@
 		82BE6AAB23F82B9600BF2A62 /* eMoodRecorderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82BE6AAA23F82B9600BF2A62 /* eMoodRecorderUITests.swift */; };
 		82BE6AB923F929E100BF2A62 /* EmployeesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82BE6AB823F929E100BF2A62 /* EmployeesViewController.swift */; };
 		82BE6ABB23F92A1200BF2A62 /* EmployeeEntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82BE6ABA23F92A1200BF2A62 /* EmployeeEntryViewController.swift */; };
-		82BE6AD323F9364000BF2A62 /* Employee+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82BE6ACF23F9364000BF2A62 /* Employee+CoreDataClass.swift */; };
-		82BE6AD423F9364000BF2A62 /* Employee+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82BE6AD023F9364000BF2A62 /* Employee+CoreDataProperties.swift */; };
-		82BE6AD523F9364000BF2A62 /* Group+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82BE6AD123F9364000BF2A62 /* Group+CoreDataClass.swift */; };
-		82BE6AD623F9364000BF2A62 /* Group+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82BE6AD223F9364000BF2A62 /* Group+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,10 +55,6 @@
 		82BE6AAC23F82B9600BF2A62 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		82BE6AB823F929E100BF2A62 /* EmployeesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeesViewController.swift; sourceTree = "<group>"; };
 		82BE6ABA23F92A1200BF2A62 /* EmployeeEntryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeEntryViewController.swift; sourceTree = "<group>"; };
-		82BE6ACF23F9364000BF2A62 /* Employee+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Employee+CoreDataClass.swift"; sourceTree = "<group>"; };
-		82BE6AD023F9364000BF2A62 /* Employee+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Employee+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		82BE6AD123F9364000BF2A62 /* Group+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Group+CoreDataClass.swift"; sourceTree = "<group>"; };
-		82BE6AD223F9364000BF2A62 /* Group+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Group+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,7 +115,6 @@
 				82BE6A8E23F82B9600BF2A62 /* eMoodRecorder.xcdatamodeld */,
 				82BE6AB823F929E100BF2A62 /* EmployeesViewController.swift */,
 				82BE6ABA23F92A1200BF2A62 /* EmployeeEntryViewController.swift */,
-				82BE6ACC23F934D700BF2A62 /* ManagedObjects */,
 			);
 			path = eMoodRecorder;
 			sourceTree = "<group>";
@@ -144,17 +135,6 @@
 				82BE6AAC23F82B9600BF2A62 /* Info.plist */,
 			);
 			path = eMoodRecorderUITests;
-			sourceTree = "<group>";
-		};
-		82BE6ACC23F934D700BF2A62 /* ManagedObjects */ = {
-			isa = PBXGroup;
-			children = (
-				82BE6ACF23F9364000BF2A62 /* Employee+CoreDataClass.swift */,
-				82BE6AD023F9364000BF2A62 /* Employee+CoreDataProperties.swift */,
-				82BE6AD123F9364000BF2A62 /* Group+CoreDataClass.swift */,
-				82BE6AD223F9364000BF2A62 /* Group+CoreDataProperties.swift */,
-			);
-			path = ManagedObjects;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -289,14 +269,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				82BE6A9023F82B9600BF2A62 /* eMoodRecorder.xcdatamodeld in Sources */,
-				82BE6AD523F9364000BF2A62 /* Group+CoreDataClass.swift in Sources */,
 				82BE6A8A23F82B9600BF2A62 /* ViewController.swift in Sources */,
 				82BE6A8623F82B9600BF2A62 /* AppDelegate.swift in Sources */,
 				82BE6ABB23F92A1200BF2A62 /* EmployeeEntryViewController.swift in Sources */,
 				82BE6A8823F82B9600BF2A62 /* SceneDelegate.swift in Sources */,
-				82BE6AD423F9364000BF2A62 /* Employee+CoreDataProperties.swift in Sources */,
-				82BE6AD623F9364000BF2A62 /* Group+CoreDataProperties.swift in Sources */,
-				82BE6AD323F9364000BF2A62 /* Employee+CoreDataClass.swift in Sources */,
 				82BE6AB923F929E100BF2A62 /* EmployeesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

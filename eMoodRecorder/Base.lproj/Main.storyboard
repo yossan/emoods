@@ -99,6 +99,9 @@
                                         <constraint firstAttribute="width" constant="128" id="kWb-bt-XFb"/>
                                     </constraints>
                                     <state key="normal" image="camera" catalog="system"/>
+                                    <connections>
+                                        <action selector="uploadIcon:" destination="xoK-oL-Osi" eventType="touchUpInside" id="aaE-hF-DnA"/>
+                                    </connections>
                                 </button>
                             </subviews>
                             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -157,7 +160,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0n2-bf-fUF">
-                                                    <rect key="frame" x="20" y="68" width="374" height="54"/>
+                                                    <rect key="frame" x="20" y="68" width="334" height="54"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                                 </textField>
@@ -181,11 +184,14 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" springLoaded="YES" translatesAutoresizingMaskIntoConstraints="NO" id="W9p-PN-Zs1">
-                                                    <rect key="frame" x="273" y="53.5" width="131" height="32"/>
+                                                    <rect key="frame" x="233" y="53.5" width="131" height="32"/>
                                                     <segments>
                                                         <segment title="Man"/>
                                                         <segment title="Woman"/>
                                                     </segments>
+                                                    <connections>
+                                                        <action selector="selectSex:" destination="xoK-oL-Osi" eventType="valueChanged" id="9iS-HB-mGs"/>
+                                                    </connections>
                                                 </segmentedControl>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sex" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fmf-SF-ZOc">
                                                     <rect key="frame" x="20" y="55.5" width="35.5" height="27"/>
@@ -217,10 +223,13 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="044-8t-cyn">
-                                                    <rect key="frame" x="0.0" y="68" width="414" height="65"/>
+                                                    <rect key="frame" x="0.0" y="68" width="374" height="65"/>
                                                     <state key="normal" title="No Group">
                                                         <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     </state>
+                                                    <connections>
+                                                        <action selector="selectGroup:" destination="xoK-oL-Osi" eventType="touchUpInside" id="5yf-NL-26p"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <constraints>
@@ -243,8 +252,18 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="ag9-w0-zR7">
-                        <barButtonItem key="rightBarButtonItem" title="Done" style="done" id="e5a-Fl-3CQ"/>
+                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="19a-JZ-qBy"/>
+                        <barButtonItem key="rightBarButtonItem" title="Done" style="done" id="e5a-Fl-3CQ">
+                            <connections>
+                                <action selector="entry:" destination="xoK-oL-Osi" id="Tdu-bZ-rqP"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="ageField" destination="0n2-bf-fUF" id="fJC-S6-ixl"/>
+                        <outlet property="nameField" destination="MTR-aM-3YF" id="knS-Tu-ubn"/>
+                        <outlet property="sexField" destination="W9p-PN-Zs1" id="Lev-Kv-q4w"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="V5C-hU-YFc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

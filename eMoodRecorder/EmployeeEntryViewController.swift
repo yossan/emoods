@@ -86,5 +86,36 @@ class EmployeeEntryViewController: UITableViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
+    
+    
+    
+    @IBOutlet weak var nameField: UITextField!
+    
+    @IBOutlet weak var ageField: UITextField!
+    
+    @IBOutlet weak var sexField: UISegmentedControl!
+    
+    @IBAction func selectSex(_ sender: Any) {
+    }
+    
+    @IBAction func uploadIcon(_ sender: Any) {
+    }
+    
+    @IBAction func selectGroup(_ sender: Any) {
+    }
+    
+    @IBAction func entry(_ sender: Any) {
+        guard let name = self.nameField else {
+            return
+        }
+        guard let age = self.ageField else {
+            return
+        }
+        let sex = self.sexField.selectedSegmentIndex
+        
+        let persistent = AppDelegate.shard.persistentContainer
+        let moc = persistent.viewContext
+        
+        
+    }
 }
